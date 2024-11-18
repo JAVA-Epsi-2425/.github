@@ -1,0 +1,24 @@
+{
+  "name": "ci-cd",
+  "private": true,
+  "version": "0.0.5",
+  "main": "src/index.js",
+  "scripts": {
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "eslint": "^9.15.0",
+    "globals": "^14.0.0",
+    "release-it": "^17.10.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "release-it": {
+    "$schema": "https://unpkg.com/release-it/schema/release-it.json",
+    "github": {
+      "release": true
+    }
+  }
+}
