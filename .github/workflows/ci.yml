@@ -31,11 +31,11 @@ jobs:
       - name: Install release-it
         run: npm install -g release-it
 
-      - name: Check if commit message is "Update Readme..."
+      - name: Check if commit message is "Update README..."
         id: check_message
         run: |
           LAST_COMMIT=$(git log -1 --pretty=%B)
-          if [[ "$LAST_COMMIT" == "Update Readme"* ]]; then
+          if [[ "$LAST_COMMIT" == "Update README"* ]]; then
             echo "is_chore_release=true" >> $GITHUB_ENV
           else
             echo "is_chore_release=false" >> $GITHUB_ENV
